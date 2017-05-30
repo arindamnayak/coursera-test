@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="itemCalc">
+ <head>
+  <title>CourseEra</title>
+  <script src="../js/angular.min.js" ></script>
+  <script src="app.js" ></script>
+ </head>
+ <body>
+  <h1>Item Calculator App</h1>
+  <div ng-controller="lunchCheckController">
+    <div>
+      What do you want for lunch: <input type="text" ng-model="items" style="border-color:{{itemColor}}"  />
+      <button type="button" name="Check" ng-click="checkLunch()" > Check If Too Much</button>
+    </div>
+    Message : <span style="color:{{itemColor}}"> {{result}} </span>
+  </div>
+ </body>
+</html>

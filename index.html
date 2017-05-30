@@ -1,8 +1,17 @@
-<html>
-<head>
-<title>CourseEra</title>
-</head>
-<body>
-<h1> Course era site is up </h1>
-</body>
+<!DOCTYPE html>
+<html ng-app="myFirstApp">
+ <head>
+  <title>CourseEra</title>
+  <script src="angular.min.js" ></script>
+  <script src="app.js" ></script>
+ </head>
+ <body>
+  <h1>My Angular App</h1>
+  <div ng-controller="MyFirstController">
+    <div>
+      Your name: <input type="text" ng-model="name" ng-keyup="displayNumeric();" ng-blur="makeUpper()" />
+    </div>
+    Total Numeric value of {{name}} is: {{result}} .
+  </div>
+ </body>
 </html>
